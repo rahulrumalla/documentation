@@ -1,4 +1,4 @@
-const { writeFile, lstatSync, readdirSync, readFileSync, existsSync } = require('fs');
+const fs, { writeFile, lstatSync, readdirSync, readFileSync, existsSync } = require('fs');
 const { join, dirname, resolve, parse } = require('path');
 const mkdirp = require('mkdirp');
 const YAML = require('yamljs');
