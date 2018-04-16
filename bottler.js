@@ -99,7 +99,7 @@ const compileDirectory = (contents, pathname, path = '') => {
 };
 
 writeFile(
-  '/bundle.json',
+  'bundle.json',
   JSON.stringify(compileDirectory(rootContents, docRoot)),
   'utf8',
   (err) => {
