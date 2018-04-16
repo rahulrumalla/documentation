@@ -4,7 +4,7 @@ const mkdirp = require('mkdirp');
 const YAML = require('yamljs');
 
 // TODO should make this more robust...
-const entryFolder = '/tmp/docs';
+const entryFolder = '/docs';
 const docRoot = resolve(__dirname, entryFolder);
 const outFileName = 'bundle';
 
