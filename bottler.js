@@ -4,10 +4,10 @@ const mkdirp = require('mkdirp');
 const YAML = require('yamljs');
 
 // TODO should make this more robust...
-const entryFolder = '/docs';
+const entryFolder = 'docs';
 const docRoot = resolve(__dirname, entryFolder);
 const outFileName = 'bundle';
-
+console.log('docRoot: ', docRoot);
 // TODO hardcoding most of this for now, should be generated in reality
 const githubUrl = 'https://github.com/captDaylight/bottler/tree/master/';
 
