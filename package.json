@@ -1,0 +1,28 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Infura Documentation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INFURA/documentation.git"
+  },
+  "author": "paul christophe @captDaylight <paul@neondaylight.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INFURA/documentation/issues"
+  },
+  "homepage": "https://github.com/INFURA/documentation#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "yamljs": "^0.3.0"
+  }
+}
