@@ -10,7 +10,7 @@ When you signup you'll receive your API token to use within your app. We use thi
 
 We have built services and APIs around JSON-RPC, REST and Websockets that you can use with your favorite libraries and frameworks, on four Ethereum networks.  Infura exposes multiple separate APIs with different use cases.
 
--Ethereum:
+- Ethereum:
   - **REST API**
     - [Documentation](https://infura-staging.now.sh/docs/api/rest/get/symbolFull)
     - Globally cached responses on our CDN for the best end-user latency
