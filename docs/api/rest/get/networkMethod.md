@@ -9,7 +9,7 @@ A request using an "HTTP GET-compatible" (non-state-changing) JSON-RPC method. M
 | Parameters |                                                                                                                                                                |        |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | network    | Ethereum network in lowercase. Possible values: `mainnet`, `ropsten`, `kovan`, `rinkeby`                                                                       | Enum   |
-| method     | JSON-RPC method. Use the `/v1/jsonrpc/{network}/methodsendpoint` to get the list of permitted methods.                                                         | String |
+| method     | JSON-RPC method. Use the `/v1/jsonrpc/{network}/methods` endpoint to get the list of permitted methods.                                                         | String |
 | params     | This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array. | Array  |
 
 ### Request
