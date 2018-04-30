@@ -20,7 +20,7 @@ We have built services and APIs around JSON-RPC, REST and Websockets that you ca
     - [Documentation](https://infura-staging.now.sh/docs/api/jsonrpc/gettingStarted/chooseaNetwork)
     - Seamlessly access Ethereum via the Infura load-balanced nodes and smart architecture the same way you would via your own nodes.
   - **JSON-RPC over Websockets**
-    - [Documentation](https://infura-staging.now.sh/docs/api/websocket/beta)
+    - [Documentation](https://infura-staging.now.sh/docs/api/websockets/beta)
     - Supports subscriptions and filters in addition to stateless RPC methods.
     - Currently in BETA
 - IPFS:
