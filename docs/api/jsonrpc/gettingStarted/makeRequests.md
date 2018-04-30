@@ -20,8 +20,3 @@ $ {"jsonrpc": "2.0","result": "0x3ccb11", "id":1}
 
 **NOTE:** "0x3ccb11" will be replaced with the block number of the most recent block on that network
 
-### Rest-like Infura API
-
-```
-https://api.infura.io/v1/jsonrpc/mainnet/eth_blockNumber?token=YOUR-API-KEY
-```
