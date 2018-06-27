@@ -7,7 +7,7 @@ const origin = require('git-origin-url');
 const entryFolder = 'docs';
 const docRoot = resolve(__dirname, entryFolder);
 
-console.log(process.env.BRANCH_NAME);
+console.log(process.env.BRANCH_NAME, process.argv);
 // origin((err, url) => {
 //   if (err) throw err;
 //
