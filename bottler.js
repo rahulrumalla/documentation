@@ -5,7 +5,6 @@ const YAML = require('yamljs');
 const origin = require('git-origin-url');
 const branchName = require('current-git-branch');
 
-// TODO should make this more robust...
 const entryFolder = 'docs';
 const docRoot = resolve(__dirname, entryFolder);
 
