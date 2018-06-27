@@ -16,6 +16,8 @@ origin((err, url) => {
 
   const githubUrl = `${url.split('.git')[0]}/tree/${branch}/`;
 
+  console.log(`building branch "${branch}" to from ${githubUrl}`);
+
   const matchName = nameToMatch => (name) => {
     if (typeof name === 'string') {
       return name === nameToMatch;
