@@ -1,4 +1,4 @@
-# INFURA Documentation
+# INFURa Documentation
 
 ## Getting Started
 
