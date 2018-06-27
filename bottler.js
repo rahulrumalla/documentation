@@ -104,7 +104,7 @@ origin((err, url) => {
       }, []);
   };
 
-  const fileName = branch === 'master' ? 'bundle.json' : 'bundle-dev.json';
+  const fileName = branch === 'master' ? 'bundle.json' : 'bundleDev.json';
 
   writeFile(
     fileName,
