@@ -8,6 +8,8 @@ const entryFolder = 'docs';
 const docRoot = resolve(__dirname, entryFolder);
 
 console.log(process.env.BRANCH_NAME, process.argv);
+
+console.log(process);
 // origin((err, url) => {
 //   if (err) throw err;
 //
