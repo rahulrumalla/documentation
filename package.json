@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/INFURA/documentation#readme",
   "dependencies": {
+    "current-git-branch": "^1.0.1",
     "fs": "0.0.1-security",
+    "git-origin-url": "^0.3.0",
     "mkdirp": "^0.5.1",
     "path": "^0.12.7",
     "yamljs": "^0.3.0"
