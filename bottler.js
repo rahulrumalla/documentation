@@ -111,9 +111,10 @@ origin((err, url) => {
     JSON.stringify(compileDirectory(rootContents, docRoot)),
     'utf8',
     (err) => {
-      if (err) {
-          return console.log(err);
-      }
+      if (err) return console.log(err);
+
+      console.log(`${fileName} successfully written.`);
+      process.exit();
     },
   );
 });
