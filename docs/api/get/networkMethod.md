@@ -4,12 +4,12 @@ A request using an "HTTP GET-compatible" (non-state-changing) JSON-RPC method. M
 
 ### GET
 
-`GET https://private-anon-cf6e378447-infura.apiary-mock.com/v1/jsonrpc/network/method?params=`
+`GET https://api.infura.io/v1/jsonrpc/network/method?params=`
 
 | Parameters |                                                                                                                                                                |        |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | network    | Ethereum network in lowercase. Possible values: `mainnet`, `ropsten`, `kovan`, `rinkeby`                                                                       | Enum   |
-| method     | JSON-RPC method. Use the `/v1/jsonrpc/{network}/methodsendpoint` to get the list of permitted methods.                                                         | String |
+| method     | JSON-RPC method. Use the `/v1/jsonrpc/{network}/methods` endpoint to get the list of permitted methods.                                                         | String |
 | params     | This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array. | Array  |
 
 ### Request
