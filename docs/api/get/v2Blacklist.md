@@ -30,7 +30,7 @@ curl --include \
 | `blacklist` | required | array     |
 | Blacklist   | string   | 0         |
 
-#### Phising blacklist, whitelist, and fuzzylist
+#### Phishing blacklist, whitelist, and fuzzylist
 
 `200`
 

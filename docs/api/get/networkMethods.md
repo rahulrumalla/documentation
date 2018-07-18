@@ -26,9 +26,9 @@ curl --include \
 | Attributes                                                                     |          |       |
 |--------------------------------------------------------------------------------|----------|-------|
 | `get`                                                                          | required | array |
-| List of methods supported by the /v1/jsonrpc/{network}/{method} endpoint (GET) | `string` | 0     |
+| List of methods supported by the `/v1/jsonrpc/{network}/{method}` endpoint (GET) | `string` | 0     |
 | `post`                                                                         | required | array |
-| List of methods supported by the /v1/jsonrpc/{network} endpoint (POST)         | `string` | 0     |
+| List of methods supported by the `/v1/jsonrpc/{network}` endpoint (POST)         | `string` | 0     |
 
 #### Methods Response
 
