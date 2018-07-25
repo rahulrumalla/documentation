@@ -20,6 +20,8 @@ $ {"jsonrpc": "2.0","result": "0x3ccb11", "id":1}
 
 **NOTE:** "0x3ccb11" will be replaced with the block number of the most recent block on that network
 
+[Read more about JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC)
+
 ### Rest-like Infura API
 
 ```
