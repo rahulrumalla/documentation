@@ -4,6 +4,8 @@
 - eth_getBalance
 - eth_getBlockTransactionCountByHash
 - eth_getBlockTransactionCountByNumber
+- eth_getUncleCountByBlockHash
+- eth_getUncleCountByBlockNumber
 - eth_getStorageAt
 - eth_hashrate
 - eth_mining
