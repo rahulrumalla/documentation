@@ -7,6 +7,7 @@
 - eth_mining
 - eth_protocolVersion
 - eth_syncing
+- eth_getTransactionCount
 - net_listening
 - net_version
 - networkMethod
