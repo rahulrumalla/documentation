@@ -3,6 +3,7 @@
 - eth_gasPrice
 - eth_getBalance
 - eth_getBlockTransactionCountByHash
+- eth_getBlockTransactionCountByNumber
 - eth_getStorageAt
 - eth_hashrate
 - eth_mining
