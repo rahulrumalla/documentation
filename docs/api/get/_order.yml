@@ -1,3 +1,4 @@
+- eth_gasPrice
 - eth_getBalance
 - eth_hashrate
 - eth_mining
