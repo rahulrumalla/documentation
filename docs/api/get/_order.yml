@@ -1,4 +1,5 @@
 - eth_getBalance
+- net_listening
 - net_version
 - networkMethod
 - networkMethods
