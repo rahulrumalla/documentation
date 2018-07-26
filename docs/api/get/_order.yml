@@ -4,6 +4,7 @@
 - eth_getBalance
 - eth_getBlockTransactionCountByHash
 - eth_getBlockTransactionCountByNumber
+- eth_getCode
 - eth_getUncleCountByBlockHash
 - eth_getUncleCountByBlockNumber
 - eth_getStorageAt
