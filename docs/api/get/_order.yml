@@ -3,6 +3,7 @@
 - eth_gasPrice
 - eth_getBalance
 - eth_getBlockByHash
+- eth_getBlockByNumber
 - eth_getBlockTransactionCountByHash
 - eth_getBlockTransactionCountByNumber
 - eth_getCode
@@ -13,6 +14,7 @@
 - eth_mining
 - eth_protocolVersion
 - eth_syncing
+- eth_getTransactionByHash
 - eth_getTransactionCount
 - net_listening
 - net_version
