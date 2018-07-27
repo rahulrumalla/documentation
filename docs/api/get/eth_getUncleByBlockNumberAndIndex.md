@@ -16,7 +16,14 @@ Returns information about the 'Uncle' of a block by hash and the Uncle index pos
 
 #### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getUncleByBlockNumberAndIndex?params=["0x29c","0x0"]
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params": ["0x29c","0x0"],"id":1}'
 ```
 
 ### RESPONSE

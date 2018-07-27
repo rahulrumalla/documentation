@@ -21,7 +21,8 @@ Returns the balance of the account of given address.
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBalance?params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]
 
 // POST 
-curl https://mainnet.infura.io/7248e7441b834e39929366186546bb0d \
+curl https://mainnet.infura.io/ \
+    -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getBalance","params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f", "latest"],"id":1}'
 ```

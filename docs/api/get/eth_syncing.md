@@ -12,7 +12,14 @@ Returns an object with data about the sync status or false.
 
 #### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_syncing
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_syncing","params": [],"id":1}'
 ```
 
 ### RESPONSE

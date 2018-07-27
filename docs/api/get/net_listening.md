@@ -12,7 +12,14 @@ Returns true if client is actively listening for network connections.
 
 #### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/net_listening
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"net_listening","params": [],"id":1}'
 ```
 
 ### RESPONSE

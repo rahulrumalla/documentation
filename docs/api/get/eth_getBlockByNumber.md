@@ -16,7 +16,14 @@ Returns information about a block by hash.
 
 #### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockByNumber?params=["0x5BAD55",false]
+
+// POST 
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params": ["0x5BAD55",false],"id":1}'
 ```
 
 ### RESPONSE

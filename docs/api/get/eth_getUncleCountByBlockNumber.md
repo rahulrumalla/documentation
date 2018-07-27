@@ -16,7 +16,14 @@ Returns the number of uncles in a block from a block matching the given block nu
 
 #### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber?params=["latest"]
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params": ["latest"],"id":1}'
 ```
 
 ### RESPONSE

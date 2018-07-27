@@ -16,7 +16,14 @@ Returns information about a transaction by block number and transaction index po
 
 #### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex?params=["0x5BAD55","0x0"]
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params": ["0x5BAD55","0x0"],"id":1}'
 ```
 
 ### RESPONSE
