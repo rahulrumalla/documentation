@@ -6,21 +6,21 @@ Returns a list of addresses owned by client.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_accounts`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_accounts
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `ADDRESSES` - arrays of hex codes as strings representing the addresses owned by the client
 
-**BODY**
+#### BODY
 
 ```js
 {

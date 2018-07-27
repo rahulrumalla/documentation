@@ -6,21 +6,21 @@ Returns true if client is actively mining new blocks.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_mining`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_mining
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `IS MINING FLAG` - a boolean indicating if the client is mining
 
-**BODY**
+#### BODY
 
 ```js
 {

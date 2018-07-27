@@ -6,21 +6,21 @@ Returns the number of most recent block.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_blockNumber`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_blockNumber
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `BLOCK NUMBER` - a hex code of an integer representing the current block number the client is on.
 
-**BODY**
+#### BODY
 
 ```js
 {

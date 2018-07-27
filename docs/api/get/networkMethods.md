@@ -34,11 +34,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 {
@@ -90,6 +90,6 @@ Server error
 
 `500`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`

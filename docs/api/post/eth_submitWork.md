@@ -6,17 +6,17 @@ Used for submitting a proof-of-work solution.
 
 `POST https://api.infura.io/v1/jsonrpc/:network/eth_submitWork`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PAYLOAD**
+#### REQUEST PAYLOAD
 1. `WORK ARRAY`
     - 8 Bytes - The nonce found (64 bits)
     - 32 Bytes - The header's pow-hash (256 bits)
     - 32 Bytes - The mix digest (256 bits)
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet \
     -X POST \
@@ -26,10 +26,10 @@ curl https://api.infura.io/v1/jsonrpc/mainnet \
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `IS VALID FLAG` - returns true if the provided solution is valid, otherwise false.
 
-**BODY**
+#### BODY
 
 ```json
 {

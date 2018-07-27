@@ -6,25 +6,25 @@ Returns the hash of the current block, the seedHash, and the boundary condition 
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getWork`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getWork
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `WORK ARRAY`
     - 32 Bytes - current block header pow-hash
     - 32 Bytes - the seed hash used for the DAG.
     - 32 Bytes - the boundary condition ("target"), 2^256 / difficulty.
 
 
-**BODY**
+#### BODY
 
 ```js
 {

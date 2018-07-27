@@ -6,11 +6,11 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 
 `POST https://api.infura.io/v1/jsonrpc/:network/eth_estimateGas`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PAYLOAD**
+#### REQUEST PAYLOAD
 1. `TRANSACTION CALL OBJECT` _[required]_
     - `from`:  _[optional]_ 20 Bytes - The address the transaction is sent from.
     - `to`: 20 Bytes - The address the transaction is directed to.
@@ -21,7 +21,7 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 
 If no gas limit is specified geth uses the block gas limit from the pending block as an upper bound. As a result the returned estimate might not be enough to executed the call/transaction when the amount of gas is higher than the pending block gas limit.
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet \
     -X POST \
@@ -31,10 +31,10 @@ curl https://api.infura.io/v1/jsonrpc/mainnet \
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `GAS USED` - the amount of gas used.
 
-**BODY**
+#### BODY
 
 ```json
 {

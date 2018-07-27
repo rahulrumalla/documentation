@@ -6,21 +6,21 @@ Returns true if client is actively listening for network connections.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/net_listening`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/net_listening
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `LISTENING FLAG` - a boolean indicating whether the client is actively listening for network connections
 
-**BODY**
+#### BODY
 
 ```js
 {

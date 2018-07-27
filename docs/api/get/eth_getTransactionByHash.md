@@ -6,21 +6,21 @@ Returns information about a transaction for a given hash.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getTransactionByHash?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `TRANSACTION HASH` _[required]_ - a string representing the hash (32 bytes) of a transaction
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByHash?params=["0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0"]
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `TRANSACTION` - A transaction object, or null when no transaction was found
     - `hash`: 32 Bytes - hash of the transaction.
     - `nonce`: the number of transactions made by the sender prior to this one.
@@ -34,7 +34,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByHash?params=["
     - `gas`: gas provided by the sender.
     - `input`: the data send along with the transaction.
 
-**BODY**
+#### BODY
 
 ```js
 {

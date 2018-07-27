@@ -6,15 +6,15 @@ Used for submitting mining hashrate.
 
 `POST https://api.infura.io/v1/jsonrpc/:network/eth_submitHashrate`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PAYLOAD**
+#### REQUEST PAYLOAD
 1. `HASHRATE` _[required]_ - a hexadecimal string representation (32 bytes) of the hash rate
 2. `ID` _[required]_ - a string representing a random hexadecimal (32 bytes) ID identifying the client
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet \
     -X POST \
@@ -24,10 +24,10 @@ curl https://api.infura.io/v1/jsonrpc/mainnet \
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `SUCCESS` - returns true if submitting went through succesfully and false otherwise.
 
-**BODY**
+#### BODY
 
 ```json
 {

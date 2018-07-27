@@ -6,21 +6,21 @@ Returns the number of hashes per second that the node is mining with.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_gasPrice`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_gasPrice
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `HASHRATE` - a hex code of an integer representing the current gas price in wei.
 
-**BODY**
+#### BODY
 
 ```js
 {

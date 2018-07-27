@@ -25,11 +25,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 [
@@ -58,6 +58,6 @@ Github is having issues
 
 `502`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`

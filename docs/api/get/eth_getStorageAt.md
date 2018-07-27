@@ -6,26 +6,26 @@ Returns the value from a storage position at a given address.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getStorageAt?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `ADDRESS` _[required]_ - a string representing the address (20 bytes) of the storage
 2. `STORAGE POSITION` _[required]_ - a hex code of the position in the storage
 3. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getStorageAt?params=["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"]
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `STORAGE VALUE` - a hex code of the integer indicating the value of the storage position at the provided address
 
-**BODY**
+#### BODY
 
 ```json
 {

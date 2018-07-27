@@ -6,11 +6,11 @@ Executes a new message call immediately without creating a transaction on the bl
 
 `POST https://api.infura.io/v1/jsonrpc/:network/eth_call`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PAYLOAD**
+#### REQUEST PAYLOAD
 1. `TRANSACTION CALL OBJECT` _[required]_
     - `from`:  _[optional]_ 20 Bytes - The address the transaction is sent from.
     - `to`: 20 Bytes - The address the transaction is directed to.
@@ -20,7 +20,7 @@ Executes a new message call immediately without creating a transaction on the bl
     - `data`: _[optional]_ Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI
 2. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet \
     -X POST \
@@ -30,10 +30,10 @@ curl https://api.infura.io/v1/jsonrpc/mainnet \
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `RETURN VALUE` - the return value of executed contract.
 
-**BODY**
+#### BODY
 
 ```json
 {

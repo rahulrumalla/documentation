@@ -6,11 +6,11 @@ Returns an array of all logs matching a given filter object.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getLogs?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `FILTER OBJECT`
     - `address` _[optional]_ - a string representing the address (20 bytes) to check for balance
     - `fromBlock` _[optional, default is "latest"]_ - an integer block number, or the string "latest", "earliest" or "pending"
@@ -18,14 +18,14 @@ Returns an array of all logs matching a given filter object.
     - `topics`_[optional]_ - Array of 32 Bytes DATA topics. Topics are order-dependent. 
     - `blockhash`:_[optional, **_future_**]_ With the addition of EIP-234, `blockHash` will be a new filter option which restricts the logs returned to the single block with the 32-byte hash `blockHash`. Using `blockHash` is equivalent to `fromBlock` = `toBlock` = the block number with hash `blockHash`. If `blockHash` is present in in the filter criteria, then neither `fromBlock` nor `toBlock` are allowed.
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getLogs?params=[{"topics":["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"]}]
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `LOG OBJECTS` - An array of log objects, or an empty array if nothing has changed since last poll.
     
     - For filters created with `eth_newBlockFilter` the return are block hashes of 32 Bytes), e.g. ["0x3454645634534..."]
@@ -41,7 +41,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getLogs?params=[{"topics":["0x
         - `data`: contains one or more 32 Bytes non-indexed arguments of the log.
         - `topics`: Array of 0 to 4 32 Bytes of indexed log arguments. (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.)
 
-**BODY**
+#### BODY
 
 ```json
 {

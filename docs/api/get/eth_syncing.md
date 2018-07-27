@@ -6,25 +6,25 @@ Returns an object with data about the sync status or false.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_syncing`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_syncing
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `SYNC STATUS` - a boolean as false **only** when not syncing
 2. `SYNC BLOCKS` 
     i. `startingBlock` - a hexcode of the integer indicating the block at which the import started (will only be reset, after the sync reached his head)
     ii. `currentBlock` - a hexcode of the integer indicating the current block, same as eth_blockNumber
     iii. `highestBlock` - a hexcode of the integer indicating the highest block
 
-**BODY**
+#### BODY
 
 ```js
 \\ When not syncing

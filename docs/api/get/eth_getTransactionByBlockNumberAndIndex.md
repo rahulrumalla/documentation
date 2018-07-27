@@ -6,22 +6,22 @@ Returns information about a transaction by block number and transaction index po
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 2. `TRANSACTION INDEX POSITION` _[required]_ - a hex of the integer representing the position in the block
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex?params=["0x5BAD55","0x0"]
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `TRANSACTION` - A transaction object, or null when no transaction was found
     - `hash`: 32 Bytes - hash of the transaction.
     - `nonce`: the number of transactions made by the sender prior to this one.
@@ -35,7 +35,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAnd
     - `gas`: gas provided by the sender.
     - `input`: the data send along with the transaction.
 
-**BODY**
+#### BODY
 
 ```js
 {

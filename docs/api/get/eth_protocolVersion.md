@@ -6,21 +6,21 @@ Returns the current ethereum protocol version.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_protocolVersion`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_protocolVersion
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `PROTOCOL VERSION` - a string indicating the current ethereum protocol version
 
-**BODY**
+#### BODY
 
 ```js
 {
