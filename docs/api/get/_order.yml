@@ -10,6 +10,7 @@
 - eth_getUncleCountByBlockHash
 - eth_getUncleCountByBlockNumber
 - eth_getStorageAt
+- eth_getTransactionByBlockHashAndIndex
 - eth_hashrate
 - eth_mining
 - eth_protocolVersion
