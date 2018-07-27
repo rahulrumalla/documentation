@@ -8,13 +8,14 @@
 - eth_getBlockTransactionCountByHash
 - eth_getBlockTransactionCountByNumber
 - eth_getCode
+- eth_getLogs
 - eth_getStorageAt
 - eth_getTransactionByBlockHashAndIndex
 - eth_getTransactionByBlockNumberAndIndex
 - eth_getUncleByBlockNumberAndIndex
 - eth_getUncleCountByBlockHash
 - eth_getUncleCountByBlockNumber
-- eth_getLogs
+- eth_getWork
 - eth_hashrate
 - eth_mining
 - eth_protocolVersion
