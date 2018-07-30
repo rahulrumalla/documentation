@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_blockNumber
+# eth_blockNumber
+
+## /v1/jsonrpc/:network/eth_blockNumber
 
 Returns the number of most recent block.
 
@@ -15,7 +17,7 @@ Returns the number of most recent block.
 // GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_blockNumber
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \

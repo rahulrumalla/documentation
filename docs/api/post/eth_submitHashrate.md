@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_submitHashrate
+# eth_submitHashrate
+
+## /v1/jsonrpc/:network/eth_submitHashrate
 
 Used for submitting mining hashrate.
 

@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getBalance
+# eth_getBalance
+
+## /v1/jsonrpc/:network/eth_getBalance
 
 Returns the balance of the account of given address.
 
@@ -17,10 +19,10 @@ Returns the balance of the account of given address.
 
 #### EXAMPLE
 ```bash
-// GET 
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBalance?params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \

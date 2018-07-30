@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getTransactionCount
+# eth_getTransactionCount
+
+## /v1/jsonrpc/:network/eth_getTransactionCount
 
 Returns the number of transactions sent from an address.
 

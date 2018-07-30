@@ -1,4 +1,4 @@
-# V1 eth_call
+# eth_call
 
 ## /v1/jsonrpc/:network/eth_call
 

@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getTransactionByReceipt
+# eth_getTransactionByReceipt
+
+## /v1/jsonrpc/:network/eth_getTransactionByReceipt
 
 Returns the receipt of a transaction by transaction hash. **Note** that the receipt is not available for pending transactions.
 

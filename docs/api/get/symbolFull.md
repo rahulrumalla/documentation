@@ -1,4 +1,6 @@
-# /v1/ticker/symbol/full
+# full
+
+## /v1/ticker/symbol/full
 
 Get pricing (ticker) data for various currency pairs (fiat, crypto, and tokens) using data from several exchanges. This endpoint shows the price at various exchanges where the symbol is traded. Use the `/v1/ticker/symbols` endpoint for the full list of supported symbols.
 

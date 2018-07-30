@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getUncleByBlockNumberAndIndex
+# eth_getUncleByBlockNumberAndIndex
+
+## /v1/jsonrpc/:network/eth_getUncleByBlockNumberAndIndex
 
 Returns information about the 'Uncle' of a block by hash and the Uncle index position.
 

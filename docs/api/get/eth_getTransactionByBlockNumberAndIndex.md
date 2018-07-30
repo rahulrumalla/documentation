@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex
+# eth_getTransactionByBlockNumberAndIndex
+
+## /v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex
 
 Returns information about a transaction by block number and transaction index position.
 

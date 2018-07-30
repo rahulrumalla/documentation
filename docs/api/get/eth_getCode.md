@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getCode
+# eth_getCode
+
+## /v1/jsonrpc/:network/eth_getCode
 
 Returns code at a given address.
 
@@ -19,7 +21,7 @@ Returns code at a given address.
 // GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getCode?params=["0x06012c8cf97bead5deae237070f9587f8e7a266d","latest"]
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
@@ -37,6 +39,6 @@ curl https://mainnet.infura.io/ \
 {
     jsonrpc: "2.0",
     id: 1,
-    result: "0x606060............" 
+    result: "0x606060............"
 }
 ```
