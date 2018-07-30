@@ -1,4 +1,6 @@
-# /v1/jsonrpc/network
+# network
+
+## /v1/jsonrpc/network
 
 A request using an "HTTP POST-compatible" (state-changing) JSON-RPC method. Use the `/v1/jsonrpc/{network}/methods` endpoint to get the list of permitted methods. Use the regular Ethereum JSON-RPC format for the POST body.
 
@@ -58,11 +60,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 {
@@ -136,7 +138,7 @@ Bad JSON in POST body or missing Content-Type Headers
 
 `400`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/JSON`
 
@@ -214,7 +216,7 @@ Server error
 
 `500`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/JSON`
 
@@ -255,6 +257,6 @@ Ethereum client error
 
 `502`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/JSON`

@@ -1,4 +1,6 @@
-# /v1/jsonrpc/network/methods
+# methods
+
+## /v1/jsonrpc/network/methods
 
 The JSON-RPC methods supported by the `/v1/jsonrpc/{network}/{method}` (GET) and `/v1/jsonrpc/{network}` (POST) endpoints.
 
@@ -34,11 +36,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 {
@@ -90,6 +92,6 @@ Server error
 
 `500`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`

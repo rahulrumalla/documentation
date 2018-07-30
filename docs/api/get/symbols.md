@@ -1,4 +1,6 @@
-# /v1/ticker/symbols
+# symbols
+
+## /v1/ticker/symbols
 
 Get a list of supported symbols (currency pairs), including fiat, crypto, and tokens
 
@@ -26,6 +28,6 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`

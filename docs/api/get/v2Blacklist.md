@@ -1,4 +1,6 @@
-# /v2/blacklist
+# v2 Blacklist
+
+## /v2/blacklist
 
 Return a blacklist of phishing sites, as well as a whitelist and a fuzzylist. This list is maintained by the MetaMask project at [https://github.com/MetaMask/eth-phishing-detect/blob/master/src/config.json](https://github.com/MetaMask/eth-phishing-detect/blob/master/src/config.json).
 
@@ -34,11 +36,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 {
@@ -113,6 +115,6 @@ Github is having issues
 
 `502`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
