@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/web3_clientVersion
+# web3_clientVersion
+
+## /v1/jsonrpc/:network/web3_clientVersion
 
 Returns the current client version.
 

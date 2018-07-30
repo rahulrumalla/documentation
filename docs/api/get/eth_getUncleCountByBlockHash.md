@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getUncleCountByBlockHash
+# eth_getUncleCountByBlockHash
+
+## /v1/jsonrpc/:network/eth_getUncleCountByBlockHash
 
 Returns the number of uncles in a block from a block matching the given block hash.
 
@@ -28,7 +30,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `BLOCK TRANSACTION COUNT` - a hex code of the integer representing the number of uncles in the provided block 
+1. `BLOCK TRANSACTION COUNT` - a hex code of the integer representing the number of uncles in the provided block
 
 #### BODY
 

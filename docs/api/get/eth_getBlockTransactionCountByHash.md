@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getBlockTransactionCountByHash
+# eth_getBlockTransactionCountByHash
+
+## /v1/jsonrpc/:network/eth_getBlockTransactionCountByHash
 
 Returns the number of transactions in a block from a block matching the given block hash.
 
@@ -18,7 +20,7 @@ Returns the number of transactions in a block from a block matching the given bl
 // GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockTransactionCountByHash?params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35"]
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
@@ -28,7 +30,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `BLOCK TRANSACTION COUNT` - a hex code of the integer representing the number of transactions in the provided block 
+1. `BLOCK TRANSACTION COUNT` - a hex code of the integer representing the number of transactions in the provided block
 
 #### BODY
 

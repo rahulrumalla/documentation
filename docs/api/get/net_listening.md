@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/net_listening
+# net_listening
+
+## /v1/jsonrpc/:network/net_listening
 
 Returns true if client is actively listening for network connections.
 

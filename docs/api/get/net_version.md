@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/net_version
+# net_version
+
+## /v1/jsonrpc/:network/net_version
 
 Returns the current network id.
 

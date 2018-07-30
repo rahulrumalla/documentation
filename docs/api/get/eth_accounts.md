@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_accounts
+# eth_accounts
+
+## /v1/jsonrpc/:network/eth_accounts
 
 Returns a list of addresses owned by client.
 

@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_protocolVersion
+# eth_protocolVersion
+
+## /v1/jsonrpc/:network/eth_protocolVersion
 
 Returns the current ethereum protocol version.
 
