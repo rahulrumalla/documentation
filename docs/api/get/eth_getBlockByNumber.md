@@ -6,22 +6,29 @@ Returns information about a block by hash.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getBlockByNumber?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 2. `SHOW TRANSACTION DETAILS FLAG` _[required]_ - if set to true, it returns the full transaction objects, if false only the hashes of the transactions.
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockByNumber?params=["0x5BAD55",false]
+
+// POST 
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params": ["0x5BAD55",false],"id":1}'
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `BLOCK` - A block object, or null when no block was found
     - `number`: the block number. null when its pending block.
     - `hash`: 32 Bytes - hash of the block. null when its pending block.
@@ -43,7 +50,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockByNumber?params=["0x5B
     - `transactions`: Array - Array of transaction objects, or 32 Bytes transaction hashes depending on the last given parameter.
     - `uncles`: an Array of uncle hashes.
 
-**BODY**
+#### BODY
 
 ```json
 {

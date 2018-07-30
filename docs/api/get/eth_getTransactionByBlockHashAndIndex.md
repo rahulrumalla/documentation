@@ -6,22 +6,29 @@ Returns information about a transaction by block hash and transaction index posi
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getTransactionByBlockHashAndIndex?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `BLOCK HASH` _[required]_ - a string representing the hash (32 bytes) of a block
 2. `TRANSACTION INDEX POSITION` _[required]_ - a hex of the integer representing the position in the block
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockHashAndIndex?params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35","0x0"]
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params": ["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35","0x0"],"id":1}'
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `TRANSACTION` - A transaction object, or null when no transaction was found
     - `hash`: 32 Bytes - hash of the transaction.
     - `nonce`: the number of transactions made by the sender prior to this one.
@@ -35,7 +42,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockHashAndIn
     - `gas`: gas provided by the sender.
     - `input`: the data send along with the transaction.
 
-**BODY**
+#### BODY
 
 ```js
 {

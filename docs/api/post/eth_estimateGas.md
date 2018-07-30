@@ -6,11 +6,11 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 
 `POST https://api.infura.io/v1/jsonrpc/:network/eth_estimateGas`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PAYLOAD**
+#### REQUEST PAYLOAD
 1. `TRANSACTION CALL OBJECT` _[required]_
     - `from`:  _[optional]_ 20 Bytes - The address the transaction is sent from.
     - `to`: 20 Bytes - The address the transaction is directed to.
@@ -21,9 +21,16 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 
 If no gas limit is specified geth uses the block gas limit from the pending block as an upper bound. As a result the returned estimate might not be enough to executed the call/transaction when the amount of gas is higher than the pending block gas limit.
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// POST api.infura.io
 curl https://api.infura.io/v1/jsonrpc/mainnet \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_estimateGas","params": [{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","gas": "0x76c0","gasPrice": "0x9184e72a000","value": "0x9184e72a","data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}],"id":1}'
+    
+// POST mainnet.infura.io
+curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_estimateGas","params": [{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","gas": "0x76c0","gasPrice": "0x9184e72a000","value": "0x9184e72a","data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}],"id":1}'
@@ -31,10 +38,10 @@ curl https://api.infura.io/v1/jsonrpc/mainnet \
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `GAS USED` - the amount of gas used.
 
-**BODY**
+#### BODY
 
 ```json
 {

@@ -6,21 +6,28 @@ Returns the receipt of a transaction by transaction hash. **Note** that the rece
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getTransactionByReceipt?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `TRANSACTION HASH` _[required]_ - a string representing the hash (32 bytes) of a transaction
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByReceipt?params=["0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0"]
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getTransactionByReceipt","params": ["0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0"],"id":1}'
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `TRANSACTION RECEIPT` - A transaction receipt object, or null when no receipt was found:
     - `transactionHash`: 32 Bytes - hash of the transaction.
     - `transactionIndex`: integer of the transactions index position in the block.
@@ -38,7 +45,7 @@ It also returns _either_:
     - `root` : 32 bytes of post-transaction stateroot (pre Byzantium)
     - `status`: either 1 (success) or 0 (failure)
 
-**BODY**
+#### BODY
 
 ```js
 {

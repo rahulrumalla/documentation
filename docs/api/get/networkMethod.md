@@ -36,11 +36,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 {
@@ -85,7 +85,7 @@ Bad JSON in `params` query parameter
 
 ``400``
 
-**Headers**
+#### HEADERS
 
 ``Content-Type:application/json``
 
@@ -95,7 +95,7 @@ JSON-RPC method is not a valid GET method
 
 ``404``
 
-**Headers**
+#### HEADERS
 
 ``Content-Type:application/json``
 
@@ -105,7 +105,7 @@ Server error
 
 ``500``
 
-**Headers**
+#### HEADERS
 
 ``Content-Type:application/json``
 
@@ -115,6 +115,6 @@ Ethereum client error
 
 ``502``
 
-**Headers**
+#### HEADERS
 
 ``Content-Type:application/json``

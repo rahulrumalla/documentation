@@ -6,21 +6,28 @@ Returns the current client version.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/web3_clientVersion`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/web3_clientVersion
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"web3_clientVersion","params": [],"id":1}'
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `STRING` - The current client version
 
-**BODY**
+#### BODY
 
 ```json
 {

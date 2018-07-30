@@ -6,11 +6,11 @@ Executes a new message call immediately without creating a transaction on the bl
 
 `POST https://api.infura.io/v1/jsonrpc/:network/eth_call`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PAYLOAD**
+#### REQUEST PAYLOAD
 1. `TRANSACTION CALL OBJECT` _[required]_
     - `from`:  _[optional]_ 20 Bytes - The address the transaction is sent from.
     - `to`: 20 Bytes - The address the transaction is directed to.
@@ -20,9 +20,16 @@ Executes a new message call immediately without creating a transaction on the bl
     - `data`: _[optional]_ Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI
 2. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// POST api.infura.io
 curl https://api.infura.io/v1/jsonrpc/mainnet \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_call","params": [{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","gas": "0x76c0","gasPrice": "0x9184e72a000","value": "0x9184e72a","data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, "latest"],"id":1}'
+    
+// POST mainnet.infura.io
+curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_call","params": [{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","gas": "0x76c0","gasPrice": "0x9184e72a000","value": "0x9184e72a","data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, "latest"],"id":1}'
@@ -30,10 +37,10 @@ curl https://api.infura.io/v1/jsonrpc/mainnet \
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `RETURN VALUE` - the return value of executed contract.
 
-**BODY**
+#### BODY
 
 ```json
 {

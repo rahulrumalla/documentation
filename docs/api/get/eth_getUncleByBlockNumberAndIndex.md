@@ -6,22 +6,29 @@ Returns information about the 'Uncle' of a block by hash and the Uncle index pos
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getUncleByBlockNumberAndIndex?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 2. `UNCLE INDEX POSITION` _[required]_ - a hex of the integer indicating the uncle's index position.
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getUncleByBlockNumberAndIndex?params=["0x29c","0x0"]
+
+// POST
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params": ["0x29c","0x0"],"id":1}'
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `BLOCK` - A block object, or null when no block was found
     - `number`: the block number. null when its pending block.
     - `hash`: 32 Bytes - hash of the block. null when its pending block.
@@ -44,7 +51,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getUncleByBlockNumberAndIndex?
 
 Note: An uncle doesn't contain individual transactions.
 
-**BODY**
+#### BODY
 
 ```json
 {

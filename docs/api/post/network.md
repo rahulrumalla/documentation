@@ -58,11 +58,11 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`
 
-**Body**
+#### BODY
 
 ```
 {
@@ -136,7 +136,7 @@ Bad JSON in POST body or missing Content-Type Headers
 
 `400`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/JSON`
 
@@ -214,7 +214,7 @@ Server error
 
 `500`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/JSON`
 
@@ -255,6 +255,6 @@ Ethereum client error
 
 `502`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/JSON`

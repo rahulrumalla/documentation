@@ -47,6 +47,6 @@ curl --include \
 
 `200`
 
-**Headers**
+#### HEADERS
 
 `Content-Type:application/json`

@@ -6,25 +6,33 @@ Returns the balance of the account of given address.
 
 `GET https://api.infura.io/v1/jsonrpc/:network/eth_getBalance?params=:paramsJSONArray`
 
-**HEADERS**
+#### HEADERS
 
 `Content-Type: application/json`
 
-**REQUEST PARAMS**
+#### REQUEST PARAMS
 1. `ADDRESS` _[required]_ - a string representing the address (20 bytes) to check for balance
+
 2. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
-**EXAMPLE**
+#### EXAMPLE
 ```bash
+// GET 
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBalance?params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]
+
+// POST 
+curl https://mainnet.infura.io/ \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"eth_getBalance","params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f", "latest"],"id":1}'
 ```
 
 ### RESPONSE
 
-**RESULT FIELDS**
+#### RESULT FIELDS
 1. `BALANCE` - integer of the current balance in wei.
 
-**BODY**
+#### BODY
 
 ```json
 {
