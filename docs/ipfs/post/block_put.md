@@ -4,7 +4,7 @@ Store input as an IPFS block.
 
 ### REQUEST
 
-`GET http://localhost:5001/api/v0/block/put?format=v0&mhtype=sha2-256&mhlen=-1`
+`POST https://ipfs.infura.io::5001/api/v0/block/put?format=v0&mhtype=sha2-256&mhlen=-1`
 
 #### REQUEST PARAMS
 - `file` _[Required]_ - The path to a file to be added to ipfs.
