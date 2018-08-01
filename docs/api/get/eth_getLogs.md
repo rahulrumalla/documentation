@@ -13,7 +13,7 @@ Returns an array of all logs matching a given filter object.
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `FILTER OBJECT`
+- `FILTER OBJECT`
     - `address` _[optional]_ - a string representing the address (20 bytes) to check for balance
     - `fromBlock` _[optional, default is "latest"]_ - an integer block number, or the string "latest", "earliest" or "pending"
     - `toBlock` _[optional, default is "latest"]_ - an integer block number, or the string "latest", "earliest" or "pending"
@@ -35,7 +35,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `LOG OBJECTS` - An array of log objects, or an empty array if nothing has changed since last poll.
+- `LOG OBJECTS` - An array of log objects, or an empty array if nothing has changed since last poll.
 
     - For filters created with `eth_newBlockFilter` the return are block hashes of 32 Bytes), e.g. ["0x3454645634534..."]
     - For filters created with `eth_newPendingTransactionFilter` the return are transaction hashes of 32 Bytes), e.g. ["0x6345343454645..."].

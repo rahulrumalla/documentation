@@ -13,7 +13,7 @@ Returns the receipt of a transaction by transaction hash. **Note** that the rece
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `TRANSACTION HASH` _[required]_ - a string representing the hash (32 bytes) of a transaction
+- `TRANSACTION HASH` _[required]_ - a string representing the hash (32 bytes) of a transaction
 
 #### EXAMPLE
 ```bash
@@ -30,7 +30,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `TRANSACTION RECEIPT` - A transaction receipt object, or null when no receipt was found:
+- `TRANSACTION RECEIPT` - A transaction receipt object, or null when no receipt was found:
     - `transactionHash`: 32 Bytes - hash of the transaction.
     - `transactionIndex`: integer of the transactions index position in the block.
     - `blockHash`: 32 Bytes - hash of the block where this transaction was in.

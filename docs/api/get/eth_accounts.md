@@ -20,7 +20,7 @@ curl https://api.infura.io/v1/jsonrpc/mainnet/eth_accounts
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `ADDRESSES` - arrays of hex codes as strings representing the addresses owned by the client
+- `ADDRESSES` - arrays of hex codes as strings representing the addresses owned by the client
 
 #### BODY
 

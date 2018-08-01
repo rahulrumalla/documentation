@@ -13,9 +13,9 @@ Returns the value from a storage position at a given address.
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `ADDRESS` _[required]_ - a string representing the address (20 bytes) of the storage
-2. `STORAGE POSITION` _[required]_ - a hex code of the position in the storage
-3. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+- `ADDRESS` _[required]_ - a string representing the address (20 bytes) of the storage
+- `STORAGE POSITION` _[required]_ - a hex code of the position in the storage
+- `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
 #### EXAMPLE
 ```bash
@@ -32,7 +32,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `STORAGE VALUE` - a hex code of the integer indicating the value of the storage position at the provided address
+- `STORAGE VALUE` - a hex code of the integer indicating the value of the storage position at the provided address
 
 #### BODY
 

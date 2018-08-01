@@ -13,8 +13,8 @@ Returns code at a given address.
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `ADDRESS` _[required]_ - a string representing the address (20 bytes) of the code
-2. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+- `ADDRESS` _[required]_ - a string representing the address (20 bytes) of the code
+- `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
 #### EXAMPLE
 ```bash
@@ -31,7 +31,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `CODE` - a hex of the code at the given address
+- `CODE` - a hex of the code at the given address
 
 #### BODY
 

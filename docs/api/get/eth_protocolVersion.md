@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `PROTOCOL VERSION` - a string indicating the current ethereum protocol version
+- `PROTOCOL VERSION` - a string indicating the current ethereum protocol version
 
 #### BODY
 

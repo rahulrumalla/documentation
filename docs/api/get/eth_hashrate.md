@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `HASHRATE` - a hex code of an integer representing the number of hashes per second.
+- `HASHRATE` - a hex code of an integer representing the number of hashes per second.
 
 #### BODY
 

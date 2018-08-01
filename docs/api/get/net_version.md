@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `NETWORK ID` - a string representing the current network id.
+- `NETWORK ID` - a string representing the current network id.
 
 #### BODY
 

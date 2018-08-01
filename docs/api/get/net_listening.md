@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `LISTENING FLAG` - a boolean indicating whether the client is actively listening for network connections
+- `LISTENING FLAG` - a boolean indicating whether the client is actively listening for network connections
 
 #### BODY
 
