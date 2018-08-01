@@ -24,7 +24,7 @@ Argument 'file' is of file type. This endpoint expects a file in the body of the
 curl "https://ipfs.infura.io:5001/api/v0/files/write?arg=/ipfs-file-test?create=true" \
     -X POST \
     -H "Content-Type: multipart/form-data" \
-    -F file="/readme.txt" 
+    -F file=@"/readme.txt" 
 ```
 
 ### RESPONSE
