@@ -14,13 +14,12 @@ Read a file in a given MFS (mutable file system).
 #### EXAMPLE
 ```bash
 // GET
-curl "https://ipfs.infura.io:5001/api/v0/files/read?arg=/ipfs/QmdEikikgbEKw9HNPbxFrPUbs9z8Ux91tbjgDuCLuERnQN"
+curl "https://ipfs.infura.io:5001/api/v0/files/read?arg=/ipfs-docs-example"
 ```
 
 ### RESPONSE
 
 On success, the call to this endpoint will return with 200 and the following body:
-
 
 #### BODY
 ```

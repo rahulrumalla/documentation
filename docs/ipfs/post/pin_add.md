@@ -4,7 +4,7 @@ Pin objects to local storage.
 
 ### REQUEST
 
-`POST curl "https://ipfs.infura.io:5001/api/v0/pin/add?arg=<ipfs-path>&recursive=true&progress=<value>"`
+`POST https://ipfs.infura.io:5001/api/v0/pin/add?arg=<ipfs-path>&recursive=true&progress=<value>`
 
 #### REQUEST PARAMS
 - `arg` _[Required]_ - Path to object(s) to be pinned.
