@@ -13,8 +13,8 @@ Returns information about a block by hash.
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `BLOCK HASH` _[required]_ - a string representing the hash (32 bytes) of a block
-2. `SHOW TRANSACTION DETAILS FLAG` _[required]_ - if set to true, it returns the full transaction objects, if false only the hashes of the transactions.
+- `BLOCK HASH` _[required]_ - a string representing the hash (32 bytes) of a block
+- `SHOW TRANSACTION DETAILS FLAG` _[required]_ - if set to true, it returns the full transaction objects, if false only the hashes of the transactions.
 
 #### EXAMPLE
 ```bash
@@ -31,7 +31,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `BLOCK` - A block object, or null when no block was found
+- `BLOCK` - A block object, or null when no block was found
     - `number`: the block number. null when its pending block.
     - `hash`: 32 Bytes - hash of the block. null when its pending block.
     - `parentHash`: 32 Bytes - hash of the parent block.

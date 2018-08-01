@@ -9,7 +9,7 @@ Get and serialize the DAG node named by .
 `GET https://ipfs.infura.io:5001/api/v0/object/get?arg=<key>`
 
 #### REQUEST PARAMS
-1. `arg` _[required]_ - Key of the object to retrieve, in base58-encoded multihash format. 
+- `arg` _[required]_ - Key of the object to retrieve, in base58-encoded multihash format. 
 
 #### EXAMPLE
 ```bash

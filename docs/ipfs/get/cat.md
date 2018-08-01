@@ -9,7 +9,7 @@ Show IPFS object data.
 `POST https://ipfs.infura.io:5001/api/v0/cat?arg=<key>`
 
 #### REQUEST PARAMS
-1. `arg` _[required]_ - The IPFS object hash
+- `arg` _[required]_ - The IPFS object hash
 
 #### EXAMPLE
 ```bash

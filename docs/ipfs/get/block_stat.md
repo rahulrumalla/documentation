@@ -9,7 +9,7 @@ Print information of a raw IPFS block.
 `POST https://ipfs.infura.io:5001/api/v0/block/stat?arg=<key>`
 
 #### REQUEST PARAMS
-1. `arg` _[required]_ - The base58 multihash of an existing block to stat.
+- `arg` _[required]_ - The base58 multihash of an existing block to stat.
 
 #### EXAMPLE
 ```bash

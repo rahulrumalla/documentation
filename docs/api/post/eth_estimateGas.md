@@ -13,7 +13,7 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 `Content-Type: application/json`
 
 #### REQUEST PAYLOAD
-1. `TRANSACTION CALL OBJECT` _[required]_
+- `TRANSACTION CALL OBJECT` _[required]_
     - `from`:  _[optional]_ 20 Bytes - The address the transaction is sent from.
     - `to`: 20 Bytes - The address the transaction is directed to.
     - `gas`: _[optional]_ Integer of the gas provided for the transaction execution. eth_estimateGas consumes zero gas, but this parameter may be needed by some executions.
@@ -41,7 +41,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `GAS USED` - the amount of gas used.
+- `GAS USED` - the amount of gas used.
 
 #### BODY
 

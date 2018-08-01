@@ -13,7 +13,7 @@ Returns the number of uncles in a block from a block matching the given block ha
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `BLOCK HASH` _[required]_ - a string representing the hash (32 bytes) of a block
+- `BLOCK HASH` _[required]_ - a string representing the hash (32 bytes) of a block
 
 #### EXAMPLE
 ```bash
@@ -30,7 +30,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `BLOCK TRANSACTION COUNT` - a hex code of the integer representing the number of uncles in the provided block
+- `BLOCK TRANSACTION COUNT` - a hex code of the integer representing the number of uncles in the provided block
 
 #### BODY
 

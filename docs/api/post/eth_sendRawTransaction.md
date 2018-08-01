@@ -13,7 +13,7 @@ Creates new message call transaction or a contract creation for signed transacti
 `Content-Type: application/json`
 
 #### REQUEST PAYLOAD
-1. `TRANSACTION DATA` _[required]_ - The signed transaction data.
+- `TRANSACTION DATA` _[required]_ - The signed transaction data.
 
 #### EXAMPLE
 ```bash
@@ -33,7 +33,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `TRANSACTION HASH` - 32 Bytes - the transaction hash, or the zero hash if the transaction is not yet available
+- `TRANSACTION HASH` - 32 Bytes - the transaction hash, or the zero hash if the transaction is not yet available
 
 NOTE - Use `eth_getTransactionReceipt` to get the contract address, after the transaction was mined, when you created a contract.
 

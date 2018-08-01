@@ -9,7 +9,7 @@ Output the raw bytes of an IPFS object.
 `GET https://ipfs.infura.io:5001/api/v0/object/data?arg=<key>`
 
 #### REQUEST PARAMS
-1. `arg` _[required]_ - Key of the object to retrieve, in base58-encoded multihash format. 
+- `arg` _[required]_ - Key of the object to retrieve, in base58-encoded multihash format. 
 
 #### EXAMPLE
 ```bash

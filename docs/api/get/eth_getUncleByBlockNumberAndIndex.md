@@ -13,8 +13,8 @@ Returns information about the 'Uncle' of a block by hash and the Uncle index pos
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
-2. `UNCLE INDEX POSITION` _[required]_ - a hex of the integer indicating the uncle's index position.
+- `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+- `UNCLE INDEX POSITION` _[required]_ - a hex of the integer indicating the uncle's index position.
 
 #### EXAMPLE
 ```bash
@@ -31,7 +31,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `BLOCK` - A block object, or null when no block was found
+- `BLOCK` - A block object, or null when no block was found
     - `number`: the block number. null when its pending block.
     - `hash`: 32 Bytes - hash of the block. null when its pending block.
     - `parentHash`: 32 Bytes - hash of the parent block.

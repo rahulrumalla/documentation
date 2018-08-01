@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `WORK ARRAY`
+- `WORK ARRAY`
     - 32 Bytes - current block header pow-hash
     - 32 Bytes - the seed hash used for the DAG.
     - 32 Bytes - the boundary condition ("target"), 2^256 / difficulty.

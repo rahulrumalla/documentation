@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `STRING` - The current client version
+- `STRING` - The current client version
 
 #### BODY
 
