@@ -9,7 +9,7 @@ Store input as an IPFS block.
 `POST https://ipfs.infura.io::5001/api/v0/block/put?format=v0&mhtype=sha2-256&mhlen=-1`
 
 #### REQUEST PARAMS
-- `file` _[Required]_ - The path to a file to be added to ipfs.
+- `file` _[Required]_ - The path to a file to be added to IPFS.
 - `format` _[Optional]_ - cid format for blocks to be created with. Default: “v0”. 
 - `mhtype` _[Optional]_ - multihash hash function. Default: “sha2-256”.
 - `mhlen` _[Optional]_ - multihash hash length. Default: “-1”. 

@@ -2,7 +2,7 @@
 
 ## /api/v0/version
 
-Show ipfs version information.
+Show IPFS version information.
 
 ### REQUEST
 
