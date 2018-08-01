@@ -2,7 +2,7 @@
 
 ## /api/v0/dag/get
 
-Get a dag node from ipfs.
+Get a dag node from IPFS.
 
 ### REQUEST
 

@@ -6,7 +6,7 @@ Show IPFS object data.
 
 ### REQUEST
 
-`POST https://ipfs.infura.io:5001/api/v0/cat?arg=<key>`
+`GET https://ipfs.infura.io:5001/api/v0/cat?arg=<key>`
 
 #### REQUEST PARAMS
 - `arg` _[required]_ - The IPFS object hash

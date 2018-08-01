@@ -2,14 +2,14 @@
 
 ## /api/v0/dag/put
 
-Add a dag node to ipfs.
+Add a dag node to IPFS.
 
 ### REQUEST
 
 `POST https://ipfs.infura.io:5001/api/v0/dag/put?format=cbor&input-enc=json&pin=false&hash=<value>`
 
 #### REQUEST PARAMS
-- `file` _[Required]_ - The path to a file to be added to ipfs.
+- `file` _[Required]_ - The path to a file to be added to IPFS.
 - `format` _[Optional]_ - cid format for blocks to be created
 - `pin` _[Optional]_ - Pin this object when adding. Default: “true”.
 - `input-enc` _[Optional]_ - Format that the input object will be. Default: “json”. 

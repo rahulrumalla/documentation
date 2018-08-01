@@ -2,7 +2,7 @@
 
 ## /api/v0/id
 
-Show ipfs node id info.
+Show IPFS node id info.
 
 ### REQUEST
 

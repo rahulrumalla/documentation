@@ -2,14 +2,14 @@
 
 ## /api/v0/add
 
-Add a file or directory to ipfs.
+Add a file or directory to IPFS.
 
 ### REQUEST
 
 `POST https://ipfs.infura.io:5001/api/v0/add?recursive=false&quiet=<value>&quieter=<value>&silent=<value>&progress=<value>&trickle=<value>&only-hash=<value>&wrap-with-directory=<value>&hidden=<value>&chunker=<value>&pin=true&raw-leaves=<value>&nocopy=<value>&fscache=<value>&cid-version=0&hash=sha2-256`
 
 #### REQUEST PARAMS
-- `file` _[Required]_ - The path to a file to be added to ipfs.
+- `file` _[Required]_ - The path to a file to be added to IPFS.
 - `recursive` _[Optional]_ - Add directory paths recursively. Default: “false”.
 - `quiet` _[Optional]_ - Write minimal output.
 - `quieter` _[Optional]_ - Write only final hash.

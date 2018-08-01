@@ -6,7 +6,7 @@ Print information of a raw IPFS block.
 
 ### REQUEST
 
-`POST https://ipfs.infura.io:5001/api/v0/block/stat?arg=<key>`
+`GET https://ipfs.infura.io:5001/api/v0/block/stat?arg=<key>`
 
 #### REQUEST PARAMS
 - `arg` _[required]_ - The base58 multihash of an existing block to stat.

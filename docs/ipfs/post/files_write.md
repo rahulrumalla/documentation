@@ -9,7 +9,7 @@ Write to a mutable file in a given filesystem.
 `POST https://ipfs.infura.io:5001/api/v0/files/write?format=cbor&input-enc=json&pin=false&hash=<value>`
 
 #### REQUEST PARAMS
-- `file` _[Required]_ - The file to be added to ipfs.
+- `file` _[Required]_ - The file to be added to IPFS.
 - `path` _[Required]_ - The path to write the file to.
 - `offset` _[Optional]_ - Byte offset to begin writing at.
 - `create` _[Optional]_ - Create the file if it does not exist.

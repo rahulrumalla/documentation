@@ -6,14 +6,14 @@ Flush a given path’s data to disk.
 
 ### REQUEST
 
-`GET https://ipfs.infura.io:5001/api/v0/files/flush?arg=<path>`
+`POST https://ipfs.infura.io:5001/api/v0/files/flush?arg=<path>`
 
 #### REQUEST PARAMS
 - `arg` _[required]_ - Path to file to be read.
 
 #### EXAMPLE
 ```bash
-// GET
+// POST
 curl "https://ipfs.infura.io:5001/api/v0/files/flush?arg=/ipfs-docs-example"
 ```
 

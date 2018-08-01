@@ -2,7 +2,7 @@
 
 ## /api/v0/dag/resolve
 
-Resolve ipld block
+Resolve IPLD block
 
 ### REQUEST
 
