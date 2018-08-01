@@ -1,4 +1,6 @@
-# /api/v0/dag/put
+# dag_put
+
+## /api/v0/dag/put
 
 Add a dag node to ipfs.
 

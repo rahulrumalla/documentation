@@ -1,4 +1,6 @@
-# /api/v0/dag/get
+# dag_get
+
+## /api/v0/dag/get
 
 Get a dag node from ipfs.
 
@@ -7,7 +9,7 @@ Get a dag node from ipfs.
 `GET https://ipfs.infura.io:5001/api/v0/dat/get?arg=<key>`
 
 #### REQUEST PARAMS
-1. `arg` _[required]_ - The IPFS object hash
+- `arg` _[required]_ - The IPFS object hash
 
 #### EXAMPLE
 ```bash

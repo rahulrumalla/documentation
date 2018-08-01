@@ -1,4 +1,6 @@
-# /api/v0/get
+# get
+
+## /api/v0/get
 
 Download IPFS objects.
 

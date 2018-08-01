@@ -1,4 +1,6 @@
-# /api/v0/pin/add
+# pin_add
+
+## /api/v0/pin/add
 
 Pin objects to local storage.
 

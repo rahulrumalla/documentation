@@ -13,14 +13,14 @@ Executes a new message call immediately without creating a transaction on the bl
 `Content-Type: application/json`
 
 #### REQUEST PAYLOAD
-1. `TRANSACTION CALL OBJECT` _[required]_
+- `TRANSACTION CALL OBJECT` _[required]_
     - `from`:  _[optional]_ 20 Bytes - The address the transaction is sent from.
     - `to`: 20 Bytes - The address the transaction is directed to.
     - `gas`: _[optional]_ Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
     - `gasPrice`: _[optional]_ Integer of the gasPrice used for each paid gas
     - `value`: _[optional]_ Integer of the value sent with this transaction
     - `data`: _[optional]_ Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI
-2. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+- `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
 #### EXAMPLE
 ```bash
@@ -40,7 +40,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `RETURN VALUE` - the return value of executed contract.
+- `RETURN VALUE` - the return value of executed contract.
 
 #### BODY
 

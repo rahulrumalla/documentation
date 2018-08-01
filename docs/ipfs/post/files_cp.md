@@ -1,4 +1,6 @@
-# /api/v0/files/cp
+# files_cp
+
+## /api/v0/files/cp
 
 Copy files to a MFS (Mutable File System).
 

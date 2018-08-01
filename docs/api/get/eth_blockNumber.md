@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `BLOCK NUMBER` - a hex code of an integer representing the current block number the client is on.
+- `BLOCK NUMBER` - a hex code of an integer representing the current block number the client is on.
 
 #### BODY
 

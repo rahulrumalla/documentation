@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `IS MINING FLAG` - a boolean indicating if the client is mining
+- `IS MINING FLAG` - a boolean indicating if the client is mining
 
 #### BODY
 

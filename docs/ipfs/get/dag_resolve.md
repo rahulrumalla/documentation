@@ -1,4 +1,6 @@
-# /api/v0/dag/resolve
+# dag_resolve
+
+## /api/v0/dag/resolve
 
 Resolve ipld block
 
@@ -7,7 +9,7 @@ Resolve ipld block
 `GET https://ipfs.infura.io:5001/api/v0/dat/resolve?arg=<key>`
 
 #### REQUEST PARAMS
-1. `arg` _[required]_ - The IPFS object hash; the path to resolve
+- `arg` _[required]_ - The IPFS object hash; the path to resolve
 
 #### EXAMPLE
 ```bash

@@ -1,4 +1,6 @@
-# /api/v0/files/read
+# files_read
+
+## /api/v0/files/read
 
 Read a file in a given MFS (mutable file system).
 

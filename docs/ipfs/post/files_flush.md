@@ -1,4 +1,6 @@
-# /api/v0/files/flush
+# files_flush
+
+## /api/v0/files/flush
 
 Flush a given path’s data to disk.
 

@@ -13,7 +13,7 @@ Used for submitting a proof-of-work solution.
 `Content-Type: application/json`
 
 #### REQUEST PAYLOAD
-1. `WORK ARRAY`
+- `WORK ARRAY`
     - 8 Bytes - The nonce found (64 bits)
     - 32 Bytes - The header's pow-hash (256 bits)
     - 32 Bytes - The mix digest (256 bits)
@@ -36,7 +36,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `IS VALID FLAG` - returns true if the provided solution is valid, otherwise false.
+- `IS VALID FLAG` - returns true if the provided solution is valid, otherwise false.
 
 #### BODY
 

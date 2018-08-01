@@ -1,4 +1,6 @@
-# /api/v0/block/put
+# block_put
+
+## /api/v0/block/put
 
 Store input as an IPFS block.
 

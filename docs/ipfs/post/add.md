@@ -1,4 +1,6 @@
-# /api/v0/add
+# add
+
+## /api/v0/add
 
 Add a file or directory to ipfs.
 

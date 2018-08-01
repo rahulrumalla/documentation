@@ -1,4 +1,6 @@
-# /api/v0/object/put
+# object_put
+
+## /api/v0/object/put
 
 Store input as a DAG object, print its key.
 

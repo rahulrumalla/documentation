@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `PEER COUNT` - integer of the number of connected peers.
+- `PEER COUNT` - integer of the number of connected peers.
 
 #### BODY
 

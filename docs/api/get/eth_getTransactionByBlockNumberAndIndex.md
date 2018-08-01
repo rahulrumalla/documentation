@@ -13,8 +13,8 @@ Returns information about a transaction by block number and transaction index po
 `Content-Type: application/json`
 
 #### REQUEST PARAMS
-1. `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
-2. `TRANSACTION INDEX POSITION` _[required]_ - a hex of the integer representing the position in the block
+- `BLOCK PARAMETER` _[required]_ - an integer block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+- `TRANSACTION INDEX POSITION` _[required]_ - a hex of the integer representing the position in the block
 
 #### EXAMPLE
 ```bash
@@ -31,7 +31,7 @@ curl https://mainnet.infura.io/ \
 ### RESPONSE
 
 #### RESULT FIELDS
-1. `TRANSACTION` - A transaction object, or null when no transaction was found
+- `TRANSACTION` - A transaction object, or null when no transaction was found
     - `hash`: 32 Bytes - hash of the transaction.
     - `nonce`: the number of transactions made by the sender prior to this one.
     - `blockHash`: 32 Bytes - hash of the block where this transaction was in. null when its pending.

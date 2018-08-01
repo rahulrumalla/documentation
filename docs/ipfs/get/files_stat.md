@@ -1,4 +1,6 @@
-# /api/v0/files/stat
+# files_stat
+
+## /api/v0/files/stat
 
 Display file status.
 

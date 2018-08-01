@@ -1,4 +1,6 @@
-# /api/v0/files/write
+# files_write
+
+## /api/v0/files/write
 
 Write to a mutable file in a given filesystem.
 
