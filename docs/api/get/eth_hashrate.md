@@ -1,6 +1,8 @@
-# /v1/jsonrpc/:network/eth_hashrate
+# eth_hashrate
 
-Returns the number of hashes per second that the node is mining with. Only applicable when the node is mining. 
+## /v1/jsonrpc/:network/eth_hashrate
+
+Returns the number of hashes per second that the node is mining with. Only applicable when the node is mining.
 
 ### REQUEST
 

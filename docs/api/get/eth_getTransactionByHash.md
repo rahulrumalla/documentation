@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getTransactionByHash
+# eth_getTransactionByHash
+
+## /v1/jsonrpc/:network/eth_getTransactionByHash
 
 Returns information about a transaction for a given hash.
 

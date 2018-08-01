@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_mining
+# eth_mining
+
+## /v1/jsonrpc/:network/eth_mining
 
 Returns true if client is actively mining new blocks.
 

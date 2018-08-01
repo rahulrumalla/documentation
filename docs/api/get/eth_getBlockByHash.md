@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getBlockByHash
+# eth_getBlockByHash
+
+## /v1/jsonrpc/:network/eth_getBlockByHash
 
 Returns information about a block by hash.
 
@@ -19,7 +21,7 @@ Returns information about a block by hash.
 // GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockByHash?params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35",false]
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \

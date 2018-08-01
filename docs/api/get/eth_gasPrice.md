@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_gasPrice
+# eth_gasPrice
+
+## /v1/jsonrpc/:network/eth_gasPrice
 
 Returns the number of hashes per second that the node is mining with.
 

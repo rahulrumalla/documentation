@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getStorageAt
+# eth_getStorageAt
+
+## /v1/jsonrpc/:network/eth_getStorageAt
 
 Returns the value from a storage position at a given address.
 
@@ -20,7 +22,7 @@ Returns the value from a storage position at a given address.
 // GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getStorageAt?params=["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"]
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
@@ -48,7 +50,7 @@ Calculating the correct position depends on the storage to retrieve. Consider th
 contract Storage {
     uint pos0;
     mapping(address => uint) pos1;
-    
+
     function Storage() {
         pos0 = 1234;
         pos1[msg.sender] = 5678;
@@ -57,7 +59,7 @@ contract Storage {
 ```
 Retrieving the value of pos0 is straight forward:
 
-```bash 
+```bash
 curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 ```
 

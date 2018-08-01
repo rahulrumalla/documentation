@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_getLogs
+# eth_getLogs
+
+## /v1/jsonrpc/:network/eth_getLogs
 
 Returns an array of all logs matching a given filter object.
 
@@ -15,7 +17,7 @@ Returns an array of all logs matching a given filter object.
     - `address` _[optional]_ - a string representing the address (20 bytes) to check for balance
     - `fromBlock` _[optional, default is "latest"]_ - an integer block number, or the string "latest", "earliest" or "pending"
     - `toBlock` _[optional, default is "latest"]_ - an integer block number, or the string "latest", "earliest" or "pending"
-    - `topics`_[optional]_ - Array of 32 Bytes DATA topics. Topics are order-dependent. 
+    - `topics`_[optional]_ - Array of 32 Bytes DATA topics. Topics are order-dependent.
     - `blockhash`:_[optional, **_future_**]_ With the addition of EIP-234, `blockHash` will be a new filter option which restricts the logs returned to the single block with the 32-byte hash `blockHash`. Using `blockHash` is equivalent to `fromBlock` = `toBlock` = the block number with hash `blockHash`. If `blockHash` is present in in the filter criteria, then neither `fromBlock` nor `toBlock` are allowed.
 
 #### EXAMPLE
@@ -23,7 +25,7 @@ Returns an array of all logs matching a given filter object.
 // GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getLogs?params=[{"topics":["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"]}]
 
-// POST 
+// POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
@@ -34,7 +36,7 @@ curl https://mainnet.infura.io/ \
 
 #### RESULT FIELDS
 1. `LOG OBJECTS` - An array of log objects, or an empty array if nothing has changed since last poll.
-    
+
     - For filters created with `eth_newBlockFilter` the return are block hashes of 32 Bytes), e.g. ["0x3454645634534..."]
     - For filters created with `eth_newPendingTransactionFilter` the return are transaction hashes of 32 Bytes), e.g. ["0x6345343454645..."].
     - For filters created with `eth_newFilter` logs are objects with following params:

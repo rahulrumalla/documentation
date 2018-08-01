@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_submitWork
+# eth_submitWork
+
+## /v1/jsonrpc/:network/eth_submitWork
 
 Used for submitting a proof-of-work solution.
 

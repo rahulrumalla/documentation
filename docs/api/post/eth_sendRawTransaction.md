@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/eth_sendRawTransaction
+# eth_sendRawTransaction
+
+## /v1/jsonrpc/:network/eth_sendRawTransaction
 
 Creates new message call transaction or a contract creation for signed transactions.
 

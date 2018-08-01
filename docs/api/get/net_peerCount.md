@@ -1,4 +1,6 @@
-# /v1/jsonrpc/:network/net_peerCount
+# net_peerCount
+
+## /v1/jsonrpc/:network/net_peerCount
 
 Returns the number of peers currently connected to the client.
 
