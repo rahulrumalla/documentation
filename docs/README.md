@@ -4,7 +4,7 @@
 
 Getting started with Infura takes just a few minutes once you’ve [signed up](https://infura.io/register).
 
-When you sign up you'll receive your Infura v3 key to use within your app. With the updated Infura keys, we're now able provide you with customized insights and analytics, route your data where it needs to go, and give you access to the most powerful infrastructure for Ethereum. [Learn more about getting started](https://infura.io/docs/gettingStarted/chooseaNetwork), and if you have any issues check our other resources below for help.
+When you sign up you'll receive your Infura v3 key to use within your app. With it we can provide you with customized insights and analytics, route your data where it needs to go, and give you access to the most powerful infrastructure for Ethereum. [Learn more about getting started](https://infura.io/docs/gettingStarted/chooseaNetwork), and if you have any issues check our other resources below for help.
 
 ## Ethereum API
 
