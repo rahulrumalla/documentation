@@ -6,7 +6,7 @@ Copy files to a MFS (Mutable File System).
 
 ### REQUEST
 
-`POST https://ipfs.infura.io:5001/api/v0/files/cp?arg=<source>&arg=<dest>`
+`GET https://ipfs.infura.io:5001/api/v0/files/cp?arg=<source>&arg=<dest>`
 
 #### REQUEST PARAMS
 - `arg` _[Required]_ - Source object to copy. ( the ipfs/[hash] link )
@@ -15,7 +15,7 @@ Copy files to a MFS (Mutable File System).
 #### EXAMPLE
 
 ```bash
-// POST
+// GET
  curl "https://ipfs.infura.io:5001/api/v0/files/cp?arg=/ipfs/QmSTkR1kkqMuGEeBS49dxVJjgHRMH6cUYa7D3tcHDQ3ea3&arg=/ipfs-examples-docs-001"
 ```
 

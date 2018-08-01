@@ -6,7 +6,7 @@ Make directories on a MFS (Mutable File System).
 
 ### REQUEST
 
-`POST https://ipfs.infura.io:5001/api/v0/files/mkdir?arg=<path>`
+`GET https://ipfs.infura.io:5001/api/v0/files/mkdir?arg=<path>`
 
 #### REQUEST PARAMS
 - `arg` _[Required]_ - Path to dir to make.
@@ -14,7 +14,7 @@ Make directories on a MFS (Mutable File System).
 #### EXAMPLE
 
 ```bash
-// POST
+// GET
  curl "https://ipfs.infura.io:5001/api/v0/files/mkdir?arg=/ipfs-examples-dir"
 ```
 

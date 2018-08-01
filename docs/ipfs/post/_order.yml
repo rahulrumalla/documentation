@@ -1,9 +1,5 @@
 - add
 - block_put
 - dag_put
-- files_cp
-- files_flush
-- files_mkdir
 - files_write
 - object_put
-- pin_add
