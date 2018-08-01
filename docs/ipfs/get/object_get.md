@@ -2,7 +2,7 @@
 
 ## /api/v0/object/get
 
-Get and serialize the DAG node named by .
+Get and serialize the DAG node named by key.
 
 ### REQUEST
 
