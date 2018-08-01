@@ -1,4 +1,6 @@
-# /api/v0/version
+# version
+
+## /api/v0/version
 
 Show ipfs version information.
 

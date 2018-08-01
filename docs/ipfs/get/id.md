@@ -1,4 +1,6 @@
-# /api/v0/id
+# id
+
+## /api/v0/id
 
 Show ipfs node id info.
 

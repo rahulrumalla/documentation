@@ -1,4 +1,6 @@
-# /api/v0/dag/resolve
+# dag_resolve
+
+## /api/v0/dag/resolve
 
 Resolve ipld block
 

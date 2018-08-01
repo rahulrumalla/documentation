@@ -1,4 +1,6 @@
-# /api/v0/block/stat
+# block_stat
+
+## /api/v0/block/stat
 
 Print information of a raw IPFS block.
 

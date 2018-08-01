@@ -1,4 +1,6 @@
-# /api/v0/dag/get
+# dag_get
+
+## /api/v0/dag/get
 
 Get a dag node from ipfs.
 

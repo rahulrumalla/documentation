@@ -1,4 +1,6 @@
-# /api/v0/object/stat
+# object_stat
+
+## /api/v0/object/stat
 
 Get stats for the DAG node named by .
 

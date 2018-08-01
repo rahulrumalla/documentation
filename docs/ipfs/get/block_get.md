@@ -1,4 +1,6 @@
-# /api/v0/block/get
+# block_get
+
+## /api/v0/block/get
 
 Get a raw IPFS block.
 

@@ -1,4 +1,6 @@
-# /api/v0/files/mkdir
+# files_mkdir
+
+## /api/v0/files/mkdir
 
 Make directories on a MFS (Mutable File System).
 

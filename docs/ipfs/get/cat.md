@@ -1,4 +1,6 @@
-# /api/v0/cat
+# cat
+
+## /api/v0/cat
 
 Show IPFS object data.
 

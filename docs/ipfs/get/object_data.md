@@ -1,4 +1,6 @@
-# /api/v0/object/data
+# object_data
+
+## /api/v0/object/data
 
 Output the raw bytes of an IPFS object.
 
