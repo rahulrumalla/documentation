@@ -1,5 +1,3 @@
-# INFURA Documentation
-
 ## Getting Started
 
 Getting started with Infura takes just a few minutes once you’ve [signed up](https://infura.io/register).
