@@ -27,7 +27,7 @@ curl https://mainnet.infura.io/ \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"],"id":1}'
     
-// SOCKETS
+// WEBSOCKETS
 >wscat -c wss://mainnet.infura.io/ws 
 >{"jsonrpc":"2.0","method":"eth_getTransactionCount","params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"],"id":1}
 ```

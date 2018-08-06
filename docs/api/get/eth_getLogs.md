@@ -31,7 +31,7 @@ curl https://mainnet.infura.io/ \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getLogs","params": ["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"],"id":1}'
     
-// SOCKETS
+// WEBSOCKETS
 >wscat -c wss://mainnet.infura.io/ws 
 >{"jsonrpc":"2.0","method":"eth_getLogs","params": ["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"],"id":1}
 ```
