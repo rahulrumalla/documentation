@@ -4,4 +4,3 @@ All examples in this reference secction will assume that the caller makes reques
 Some tools you can use for making these requests
 - [WSCAT](https://github.com/websockets/wscat)
 - [Advanced Rest Client](https://install.advancedrestclient.com/)
-- [PostMan](https://www.getpostman.com/)
