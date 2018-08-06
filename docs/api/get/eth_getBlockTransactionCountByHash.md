@@ -17,14 +17,18 @@ Returns the number of transactions in a block from a block matching the given bl
 
 #### EXAMPLE
 ```bash
-// GET
+// HTTP GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockTransactionCountByHash?params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35"]
 
-// POST
+// HTTP POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params": ["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35"],"id":1}'
+    
+// SOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params": ["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35"],"id":1}
 ```
 
 ### RESPONSE

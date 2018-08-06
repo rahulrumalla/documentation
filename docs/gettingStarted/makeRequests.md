@@ -22,6 +22,8 @@ $ {"jsonrpc": "2.0","result": "0x3ccb11", "id":1}
 
 [Read more about JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC)
 
+Important to note that JSON-RPC is transport agnostic, meaning same concepts can be used over HTTP, sockets or other message passing environments. However, when using with Infura, there are endpoints are exclusive to 'socket' transports only (listed under the wss directory). 
+
 ### Rest-like Infura API
 
 ```
