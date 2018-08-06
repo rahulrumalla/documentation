@@ -18,14 +18,18 @@ Returns code at a given address.
 
 #### EXAMPLE
 ```bash
-// GET
+// HTTP GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getCode?params=["0x06012c8cf97bead5deae237070f9587f8e7a266d","latest"]
 
-// POST
+// HTTP POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getCode","params": ["0x06012c8cf97bead5deae237070f9587f8e7a266d"],"id":1}'
+    
+// SOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"eth_getCode","params": ["0x06012c8cf97bead5deae237070f9587f8e7a266d"],"id":1}
 ```
 
 ### RESPONSE
