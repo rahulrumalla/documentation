@@ -6,7 +6,7 @@ Creates a filter in the node, to notify when new pending transactions arrive. To
 ```bash
 >wscat -c wss://mainnet.infura.io/ws 
 
->'{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+>{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}
 ```
 
 ### RESPONSE

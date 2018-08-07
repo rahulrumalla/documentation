@@ -6,7 +6,7 @@ Polling method for a filter, which returns an array of logs which occurred since
 ```bash
 >wscat -c wss://mainnet.infura.io/ws 
 
->'{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":73}'
+>{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":73}
 ```
 
 ### RESPONSE
