@@ -1,5 +1,9 @@
 # Introduction
-All examples in this reference secction will assume that the caller makes requests on the same sticky connection using web sockets. 
+
+Infura's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support.
+The regular Ethereum API is also supported and documented in the 'examples' portion of 'Ethereum API'
+
+All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.
 
 Some tools you can use for making these requests
 - [WSCAT](https://github.com/websockets/wscat)
@@ -37,4 +41,3 @@ instance.getPastEvents(
     }
 );
 ```
-
