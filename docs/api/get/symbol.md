@@ -6,9 +6,8 @@ Get pricing (ticker) data for various currency pairs (fiat, crypto, and tokens) 
 
 ### GET
 
-```
-GET https://api.infura.io/v1/ticker/symbol
-```
+`GET https://api.infura.io/v1/ticker/symbol`
+
 
 | Parameters |                               |        |
 |------------|-------------------------------|--------|

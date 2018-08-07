@@ -22,7 +22,7 @@ Argument 'file' is of file type. This endpoint expects a file in the body of the
 curl "https://ipfs.infura.io:5001/api/v0/block/put" \
     -X POST \
     -H "Content-Type: multipart/form-data" \
-    -F file="/purpink.jpeg" 
+    -F file=@"/purpink.jpeg" 
 ```
 
 ### RESPONSE
