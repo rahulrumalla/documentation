@@ -22,10 +22,15 @@ $ {"jsonrpc": "2.0","result": "0x3ccb11", "id":1}
 
 [Read more about JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC)
 
-Important to note that JSON-RPC is transport agnostic, meaning same concepts can be used over HTTP, web sockets or other message passing environments. However, when using with Infura, there are endpoints are exclusive to 'web socket' transports only (listed under the wss directory). 
+Important to note that JSON-RPC is transport agnostic, meaning same concepts can be used over HTTP, websockets or other message passing environments. All JSON_RPC methods listed in 'Ethereum API' is also supported through websockets.
 
 ### Rest-like Infura API
 
 ```
 https://api.infura.io/v1/jsonrpc/mainnet/eth_blockNumber?token=YOUR-API-KEY
 ```
+
+### Subscriptions and filters
+
+In addition to the Ethereum API, Geth version 1.4 has experimental support for pub/sub using subscriptions. This, along with filters, is supported through Infura's websocket endpoint.
+
