@@ -2,7 +2,7 @@
 
 ## /api/v0/object/stat
 
-Get stats for the DAG node named by .
+Get stats for the DAG node named by key.
 
 ### REQUEST
 
