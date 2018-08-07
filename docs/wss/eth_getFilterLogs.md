@@ -14,7 +14,7 @@ Returns an array of all logs matching filter with given id.
 ```bash
 >wscat -c wss://mainnet.infura.io/ws 
 
->'{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":73}'
+>{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0xfe704947a3cd3ca12541458a4321c869"],"id":73}
 ```
 
 ### RESPONSE
