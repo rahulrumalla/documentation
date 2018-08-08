@@ -4,8 +4,9 @@
 - eth_newPendingTransactionFilter
 - eth_getFilterChanges
 - eth_getFilterLogs
-- eth_subscribe
-- eth_subscription
 - eth_uninstallFilter
+- eth_subscribe
 - eth_unsubscribe
+- parity_subscribe
+- parity_unsubscribe
 - faq
