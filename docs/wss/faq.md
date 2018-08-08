@@ -1,10 +1,10 @@
 # FAQ / FYI
 
-**Endpoint?**
+**What is the Infura endpoint for WebSockets?**
 
-Infura's websocket endpoint : wss://`<network>`.infura.io/ws
+`wss://<network>.infura.io/ws`
 
-**Supported networks?**
+**What are the supported networks?**
 
 Mainnet, Ropsten, Rinkeby, Kovan
 
