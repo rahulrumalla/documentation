@@ -11,3 +11,7 @@ Seamlessly access Ethereum via the Infura load-balanced nodes and smart architec
 ## IPFS API
 
 Access the [IPFS API](https://ipfs.io/docs/api/) and our [public IPFS gateway](https://ipfs.infura.io/ipfs/Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a) over HTTPS like you would be able to via your own IPFS nodes. [Read more about our IPFS API](https://infura.io/docs/ipfs/get/block_get).
+
+## WEBSOCKETS API
+
+Use our WEBSCOKETS API to poll on filters, subscriptions, events, etc. Access the [Ethereum Pub/Sub API documentation](https://github.com/ethereum/go-ethereum/wiki/RPC-PUB-SUB) and [Parity Ethereum Pub/Sub API documentation](https://wiki.parity.io/JSONRPC-Parity-Pub-Sub-module.html). Read more about our [WEBSOCKETS API](https://infura.io/docs/ipfs/get/block_get).

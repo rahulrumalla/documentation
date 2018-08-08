@@ -4,15 +4,15 @@
 
 Infura's websocket endpoint : wss://`<network>`.infura.io/ws
 
-**Support networks?**
+**Supported networks?**
 
 Mainnet, Ropsten, Rinkeby, Kovan
 
-**Batch Support?**
+**Is batch support available?**
 
 Yes
 
-**Compression Enabled?**
+**Is compression enabled?**
 
 Yes
 
@@ -22,8 +22,8 @@ Yes
 
 **Why does my websocket connection disconnect after a while?**
 
-Idle connections that last more than an hour will get disconnected. Adding 'pings' to your websocket connection will prevent the connection from going idle.
-Also, any unrecognized requests will trigger the server to close the connection with an error message.
+* Idle connections that exceed beyond an hour will get disconnected. Adding 'pings' to your websocket connection will prevent the connection from going idle.
+* Any unrecognized requests will trigger the server to close the connection with an error message.
 
 **non-empty 'Sec-WebSocket-Protocol' header error?**
 
