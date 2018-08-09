@@ -1,7 +1,7 @@
 # parity_unsubscribe
 
 Unsubscribes from a subscription.
-NOTE: parity_unsubscribe is only supported on parity nodes (Kovan network)
+NOTE: parity_unsubscribe is only supported on the Kovan network
 
 ### REQUEST PARAMS
 - `SUBSCRIPTION ID` _[required]_ 

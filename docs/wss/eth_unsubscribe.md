@@ -1,7 +1,6 @@
 # eth_unsubscribe
 
 Subscriptions are cancelled with a regular RPC call with eth_unsubscribe as method and the subscription id as first parameter. It returns a bool indicating if the subscription was cancelled successful.
-NOTE: eth_unsubscribe is only supported on geth nodes (Mainnet, Ropsten, Rinkeby networks)
 
 ### REQUEST PARAMS
 - `SUBSCRIPTION ID` _[required]_ 

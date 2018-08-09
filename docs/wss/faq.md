@@ -29,4 +29,11 @@ Any unrecognized requests will trigger the server to close the connection with a
 
 web3.js 1.0.0-beta.34 has an open issue with request headers https://github.com/ethereum/web3.js/issues/1559. Please revert/downgrade to 1.0.0-beta.33.
 
+**Why is includeTransactions option not working for eth_subscribe?**
+
+Though the includeTransactions option is included in the Ethereum Pub/Sub API documentation, currently it is not returning the expected results.
+For more information: https://github.com/ethereum/go-ethereum/issues/15804.
+
+
+
 
