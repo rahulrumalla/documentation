@@ -1,7 +1,7 @@
 # parity_subscribe
 
 Starts a subscription (on WebSockets / IPC / TCP transports) to results of calling some other RPC method. For every change in returned value of that RPC call a JSON-RPC notification with result and subscription ID will be sent to a client.
-NOTE: parity_subscribe is only supported on parity nodes (Kovan network)
+NOTE: parity_subscribe is only supported on the Kovan network
 
 ### REQUEST PARAMS
 - `RPC method name` _[required]_

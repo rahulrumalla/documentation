@@ -2,10 +2,6 @@
 
 Creates a new subscription over particular events. The node will return a subscription id. For each event that matches the subscription a notification with relevant data is send together with the subscription id.
 
-NOTE: eth_subscribe is supported on all networks but the API for pub/sub is slightly different for Geth and Parity.
-- [Ethereum/Geth Pub/Sub API documentation](https://github.com/ethereum/go-ethereum/wiki/RPC-PUB-SUB)
-- [Parity Pub/Sub API documentation](https://wiki.parity.io/JSONRPC-Eth-Pub-Sub-Module)
-
 ### REQUEST PARAMS
 - `SUBSCRIPTION TYPE NAME` _[required]_ 
     - `newHeads`- Subscribing to this, fires a notification each time a new header is appended to the chain, including chain reorganizations. Users can use the bloom filter to determine if the block contains logs that are interested to them.
@@ -13,7 +9,7 @@ NOTE: eth_subscribe is supported on all networks but the API for pub/sub is slig
         - `address` (optional) - either an address or an array of addresses. Only logs that are created from these addresses are returned (optional)
         - `topics` (optional) - only logs which match the specified topics (optional)
     - `newPendingTransactions` - Returns the hash for all transactions that are added to the pending state and are signed with a key that is available in the node. When a transaction that was previously part of the canonical chain isn't part of the new canonical chain after a reogranization its again emitted.
-    - `syncing` - Indicates when the node starts or stops synchronizing. The result can either be a boolean indicating that the synchronization has started (true), finished (false) or an object with various progress indicators. NOT SUPPORTED ON PARITY!
+    - `syncing` - Indicates when the node starts or stops synchronizing. The result can either be a boolean indicating that the synchronization has started (true), finished (false) or an object with various progress indicators. NOT SUPPORTED ON KOVAN!
 
 #### EXAMPLE
 ```bash
@@ -28,7 +24,7 @@ NOTE: eth_subscribe is supported on all networks but the API for pub/sub is slig
 // newPendingTransactions
 >{"id": 1, "method": "eth_subscribe", "params": ["newPendingTransactions"]}
 
-// syncing (not supported on parity)
+// syncing (not supported on Kovan)
 >{"id": 1, "method": "eth_subscribe", "params": ["syncing"]}
 ```
 
@@ -98,7 +94,7 @@ NOTE: eth_subscribe is supported on all networks but the API for pub/sub is slig
     }
 }
 
-// syncing subscription
+// syncing subscription (not supported on Kovan)
 {
     "subscription":"0xe2ffeb2703bcf602d42922385829ce96",
     "result": { 
