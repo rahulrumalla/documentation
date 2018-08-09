@@ -18,14 +18,18 @@ Returns the number of transactions sent from an address.
 
 #### EXAMPLE
 ```bash
-// GET
+// HTTP GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionCount?params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]
 
-// POST
+// HTTP POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"],"id":1}'
+    
+// WEBSOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"eth_getTransactionCount","params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"],"id":1}
 ```
 
 ### RESPONSE

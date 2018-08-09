@@ -18,17 +18,21 @@ Used for submitting mining hashrate.
 
 #### EXAMPLE
 ```bash
-// POST api.infura.io
+// HTTP POST api.infura.io
 curl https://api.infura.io/v1/jsonrpc/mainnet \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0000000000000000000000000000000000000000000000000000000000500000", "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"],"id":1}'
 
-// POST mainnet.infura.io
+// HTTP POST mainnet.infura.io
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0000000000000000000000000000000000000000000000000000000000500000", "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"],"id":1}'
+    
+// WEBSOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0000000000000000000000000000000000000000000000000000000000500000", "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"],"id":1}
 ```
 
 ### RESPONSE

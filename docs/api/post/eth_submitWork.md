@@ -20,17 +20,21 @@ Used for submitting a proof-of-work solution.
 
 #### EXAMPLE
 ```bash
-// POST api.infura.io
+// HTTP POST api.infura.io
 curl https://api.infura.io/v1/jsonrpc/mainnet \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_submitWork","params": ["0x0000000000000001","0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef","0xD1FE5700000000000000000000000000D1FE5700000000000000000000000000"],"id":1}'
 
-// POST mainnet.infura.io
+// HTTP POST mainnet.infura.io
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_submitWork","params": ["0x0000000000000001","0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef","0xD1FE5700000000000000000000000000D1FE5700000000000000000000000000"],"id":1}'
+    
+// WEBSOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"eth_submitWork","params": ["0x0000000000000001","0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef","0xD1FE5700000000000000000000000000D1FE5700000000000000000000000000"],"id":1}
 ```
 
 ### RESPONSE

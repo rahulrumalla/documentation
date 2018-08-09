@@ -14,14 +14,18 @@ Returns the number of peers currently connected to the client.
 
 #### EXAMPLE
 ```bash
-// GET
+// HTTP GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/net_peerCount
 
-// POST
+// HTTP POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"net_peerCount","params": [],"id":1}'
+    
+// WEBSOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"net_peerCount","params": [],"id":1}
 ```
 
 ### RESPONSE

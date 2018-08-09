@@ -14,7 +14,12 @@ Returns a list of addresses owned by client.
 
 #### EXAMPLE
 ```bash
+// HTTP GET
 curl https://api.infura.io/v1/jsonrpc/mainnet/eth_accounts
+
+// WEBSOCKETS
+>wscat -c wss://mainnet.infura.io/ws 
+>{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":73}
 ```
 
 ### RESPONSE
