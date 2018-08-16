@@ -23,13 +23,13 @@ Returns an array of all logs matching a given filter object.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getLogs?params=[{"topics":["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"]}]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getLogs --data-urlencode 'params=[{"topics":["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"]}]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \
     -X POST \
     -H "Content-Type: application/json" \
-    -d '{"jsonrpc":"2.0","method":"eth_getLogs","params": ["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"],"id":1}'
+    -d '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80"]}],"id":1}'
     
 // WEBSOCKETS
 >wscat -c wss://mainnet.infura.io/ws 

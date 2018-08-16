@@ -19,7 +19,7 @@ Returns information about a transaction by block hash and transaction index posi
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockHashAndIndex?params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35","0x0"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByBlockHashAndIndex --data-urlencode 'params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35","0x0"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

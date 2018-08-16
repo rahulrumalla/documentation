@@ -20,7 +20,7 @@ Returns the value from a storage position at a given address.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getStorageAt?params=["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getStorageAt --data-urlencode 'params=["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

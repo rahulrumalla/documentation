@@ -19,7 +19,7 @@ Returns the number of transactions sent from an address.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionCount?params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionCount --data-urlencode 'params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

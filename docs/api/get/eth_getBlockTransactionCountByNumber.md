@@ -19,7 +19,7 @@ Returns the number of transactions in a block matching the given block number.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockTransactionCountByNumber?params=["latest"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockTransactionCountByNumber --data-urlencode 'params=["latest"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

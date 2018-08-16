@@ -15,7 +15,7 @@ Returns an object with data about the sync status or false.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_syncing
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_syncing
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

@@ -19,7 +19,7 @@ Returns code at a given address.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getCode?params=["0x06012c8cf97bead5deae237070f9587f8e7a266d","latest"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getCode --data-urlencode 'params=["0x06012c8cf97bead5deae237070f9587f8e7a266d","latest"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

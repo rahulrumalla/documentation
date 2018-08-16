@@ -15,7 +15,7 @@ Returns true if client is actively mining new blocks.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_mining
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_mining
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

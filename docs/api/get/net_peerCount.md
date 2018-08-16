@@ -15,7 +15,7 @@ Returns the number of peers currently connected to the client.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/net_peerCount
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/net_peerCount
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

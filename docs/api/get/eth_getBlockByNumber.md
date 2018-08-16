@@ -19,7 +19,7 @@ Returns information about a block by hash.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockByNumber?params=["0x5BAD55",false]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockByNumber --data-urlencode 'params=["0x5BAD55",false]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

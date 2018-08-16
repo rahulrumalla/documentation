@@ -15,7 +15,7 @@ Returns the current network id.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/net_version
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/net_version
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

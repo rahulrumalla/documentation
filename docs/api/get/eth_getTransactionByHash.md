@@ -18,7 +18,7 @@ Returns information about a transaction for a given hash.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByHash?params=["0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getTransactionByHash --data-urlencode 'params=["0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

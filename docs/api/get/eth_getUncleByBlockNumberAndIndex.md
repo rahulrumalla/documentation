@@ -19,7 +19,7 @@ Returns information about the 'Uncle' of a block by hash and the Uncle index pos
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getUncleByBlockNumberAndIndex?params=["0x29c","0x0"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getUncleByBlockNumberAndIndex --data-urlencode 'params=["0x29c","0x0"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

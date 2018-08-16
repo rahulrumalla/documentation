@@ -18,7 +18,7 @@ Returns the number of transactions in a block from a block matching the given bl
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockTransactionCountByHash?params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getBlockTransactionCountByHash --data-urlencode 'params=["0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

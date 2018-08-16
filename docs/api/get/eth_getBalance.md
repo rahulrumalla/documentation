@@ -20,7 +20,7 @@ Returns the balance of the account of given address.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getBalance?params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getBalance --data-urlencode 'params=["0xc94770007dda54cF92009BFF0dE90c06F603a09f","latest"]'
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

@@ -15,7 +15,7 @@ Returns the hash of the current block, the seedHash, and the boundary condition 
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_getWork
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_getWork
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

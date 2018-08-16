@@ -15,7 +15,7 @@ Returns true if client is actively listening for network connections.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/net_listening
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/net_listening
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

@@ -15,7 +15,7 @@ Returns the current ethereum protocol version.
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_protocolVersion
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_protocolVersion
 
 // HTTP POST
 curl https://mainnet.infura.io/ \

@@ -15,7 +15,7 @@ Returns the number of hashes per second that the node is mining with. Only appli
 #### EXAMPLE
 ```bash
 // HTTP GET
-curl https://api.infura.io/v1/jsonrpc/mainnet/eth_hashrate
+curl -G https://api.infura.io/v1/jsonrpc/mainnet/eth_hashrate
 
 // HTTP POST
 curl https://mainnet.infura.io/ \
