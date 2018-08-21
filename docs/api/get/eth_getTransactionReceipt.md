@@ -1,12 +1,12 @@
-# eth_getTransactionByReceipt
+# eth_getTransactionReceipt
 
-## /v1/jsonrpc/:network/eth_getTransactionByReceipt
+## /v1/jsonrpc/:network/eth_getTransactionReceipt
 
 Returns the receipt of a transaction by transaction hash. **Note** that the receipt is not available for pending transactions.
 
 ### REQUEST
 
-`GET https://api.infura.io/v1/jsonrpc/:network/eth_getTransactionByReceipt?params=:paramsJSONArray`
+`GET https://api.infura.io/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray`
 
 #### HEADERS
 

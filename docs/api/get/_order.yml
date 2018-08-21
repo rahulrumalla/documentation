@@ -12,6 +12,9 @@
 - eth_getStorageAt
 - eth_getTransactionByBlockHashAndIndex
 - eth_getTransactionByBlockNumberAndIndex
+- eth_getTransactionByHash
+- eth_getTransactionCount
+- eth_getTransactionReceipt
 - eth_getUncleByBlockNumberAndIndex
 - eth_getUncleCountByBlockHash
 - eth_getUncleCountByBlockNumber
@@ -20,8 +23,6 @@
 - eth_mining
 - eth_protocolVersion
 - eth_syncing
-- eth_getTransactionByHash
-- eth_getTransactionCount
 - net_listening
 - net_version
 - networkMethod
